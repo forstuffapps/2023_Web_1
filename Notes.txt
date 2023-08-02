@@ -9,4 +9,7 @@
 
 
 
-
+#-- Revision
+1. Absolute file path and relative file path
+2. ../q1.png(goes to upper level) and ./q1.png(searches in the current directory) accessing the paths with special character
+3. 
