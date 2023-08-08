@@ -15,4 +15,7 @@
 3. </h1> is a closing tag
 4. void elements <br>, <hr>, these are also same, <br />,<hr />.
 5. <a href="https://stellarium-web.org/">Stellarium</a>, <tag attribute=value>content</tag>
-6. 
+6. if you want an imgae to be hyperlinked then write <a><img/><a> write image inside anchor
+7. <!DOC HTML> represents the version of the html i.e version 5
+8. to get the HTML boilerplate code type "!" and then press enter. You can get this for the files that are saved with .html
+9. 
