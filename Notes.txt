@@ -12,4 +12,7 @@
 #-- Revision
 1. Absolute file path and relative file path
 2. ../q1.png(goes to upper level) and ./q1.png(searches in the current directory) accessing the paths with special character
-3. 
+3. </h1> is a closing tag
+4. void elements <br>, <hr>, these are also same, <br />,<hr />.
+5. <a href="https://stellarium-web.org/">Stellarium</a>, <tag attribute=value>content</tag>
+6. 
