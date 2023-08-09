@@ -15,7 +15,26 @@
 3. </h1> is a closing tag
 4. void elements <br>, <hr>, these are also same, <br />,<hr />.
 5. <a href="https://stellarium-web.org/">Stellarium</a>, <tag attribute=value>content</tag>
-6. if you want an imgae to be hyperlinked then write <a><img/><a> write image inside anchor
+6. if you want an imgae to be hyperlinked then write <a><img/><a> write image inside the anchor
 7. <!DOC HTML> represents the version of the html i.e version 5
 8. to get the HTML boilerplate code type "!" and then press enter. You can get this for the files that are saved with .html
-9. 
+9. Types of style sheets : css, saas, less
+10. 3 ways of adding css to html - inline, internal, external
+    inline css goes into opening tag of the html
+    <html style="background: blue"></html> , property is background and value is blue
+    inline is limited to one element, and internal is limited to one document
+    internal css :
+    <html>
+    <style>
+    html{
+        background : red;
+    }
+    </style>
+    </html>
+    inside teh css file the tag name is called selector
+    External css : 
+    <head>
+    <link rel="stylesheet" href="./styles.css" />
+    </head>
+    in the baove rel represents the relationship with the file and href represents the location
+    
