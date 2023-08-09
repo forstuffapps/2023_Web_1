@@ -37,4 +37,37 @@
     <link rel="stylesheet" href="./styles.css" />
     </head>
     in the baove rel represents the relationship with the file and href represents the location
-    
+    if we are styling the h1, a, p tags then its called the lement selector
+    selector represents that which part of the html should the rules apply to. rules written in the curly braces.
+    class selector in css starts with a .
+    <h1 class="cls-name">qwe</h1>
+    .clas-name{
+        color:red;
+    }
+    class selectors always start with the dot
+11. id selector starts with #id-name
+    <h1 id="main">qwe</h1>
+    #main{
+        color:red;
+    }
+    difference between id and class is class is used to apply for many elements but id are only applied for one elemnt. 
+    incase u have a special element wher eyou wish to apply it only for that one then use id
+12. Attribute selectors
+<p draggable="true">qwe</p>
+<p draggable="false">qwe</p>
+    p[draggable]{
+        color: red;
+    }
+    p[draggable="false"]{
+        color:blue;
+    }
+    the baove code states that for all the p tag elements which have attribute draggable apply the css
+    you can also specify with the value specific
+13. universal selector
+    *{
+        color:red;
+    }
+    applies the css properties to all the elements
+14. To revise all this refer to 5.3 module's css file
+
+
