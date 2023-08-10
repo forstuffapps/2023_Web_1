@@ -71,5 +71,17 @@
     }
     applies the css properties to all the elements
 14. To revise all this refer to 5.3 module's css file
-
+15. font-family: Helvetica, sans-serif - so if Helvetica is not supported in the os it uses next font san-serif.
+sans-serif is the generic font type. This is the reson why they use mutiple fonts in the font family.
+16. font-family: "Times New Roman", serif - it is important to use double quotes for the fonts that have spaces.
+The system will recognise it only if it is mentioned in double quotes.
+17. fonts : em for the parent tag, rem for the root tag
+18. in chrome dev inspection got to css overview for colors fonts and etc.
+19. computed tab show ewhat are the final styles applied on the element
+20. crossed styles represent that the respective ones are overridden
+21. element->padding->border->margin. you can give 4 separate values like top, right, down, left.
+But if you only give 2 values then 1-top&down, 2-right&left. 
+22. So div tags are used to group elements and create a box.
+23 chroe extension named pesticide is used for identifying div boxes.
+24. 
 
