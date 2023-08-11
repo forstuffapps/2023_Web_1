@@ -7,6 +7,8 @@
 1. Old HTML CSS Bootstrap of Angela Yu Videos : https://appbrewery.com/courses/legacy-complete-web-development-course/lectures/46570401
 2. Lorem Ipsum - https://www.lipsum.com/
 3. Color palettes websites for Devs - https://colorhunt.co/
+4. CSS Positioning : https://appbrewery.github.io/css-positioning/
+5. 
 
 
 
@@ -83,5 +85,15 @@ The system will recognise it only if it is mentioned in double quotes.
 But if you only give 2 values then 1-top&down, 2-right&left. 
 22. So div tags are used to group elements and create a box.
 23 chroe extension named pesticide is used for identifying div boxes.
-24. 
+24. The hierarchy of style applied are external style sheets->internal styles--> inline styles.
+25. Refer to diagram for hierarchy of css rules. Importance > Type > Specificity > Position.
+26. grouping css selectors 1. selector1, selector2..... 
+        2. selector1 > selector2 this is a parent and child... it is the direct child not a grand child, it is the first generation child
+        Apply to the direct child of left div -> p
+        3. Descendant selector : selector1 selector2 which is a descendant. so for the parent there can be any number of inner childs
+        still they all are descendents. div1 -> div2 -> p, now both p and div2 are descendants of div1
+        4. chaining selectors apply where all selectors are True. selector1selector2  h1.class#main 
+        it is always better to start with element then class and id. we will write very specific to an element.
+        5. combining selectors. you can combine the above 4 selectors. selector1 selector2selector3
+these are selctors so they can be anything like id selectors, class selectors
 
