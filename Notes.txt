@@ -96,4 +96,7 @@ But if you only give 2 values then 1-top&down, 2-right&left.
         it is always better to start with element then class and id. we will write very specific to an element.
         5. combining selectors. you can combine the above 4 selectors. selector1 selector2selector3
 these are selctors so they can be anything like id selectors, class selectors
+27. CSS positioning. Static, Relative, Absolute, Fixed.
+Refer to the ink above for better understanding. Do the 7.2 module for practice.
+
 
