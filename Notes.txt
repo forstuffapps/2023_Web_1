@@ -73,7 +73,7 @@
     }
     applies the css properties to all the elements
 14. To revise all this refer to 5.3 module's css file
-15. font-family: Helvetica, sans-serif - so if Helvetica is not supported in the os it uses next font san-serif.
+15. font-family: Helvetica, sans-serif - so if Helvetica is not supported in the os it uses next font sans-serif.
 sans-serif is the generic font type. This is the reson why they use mutiple fonts in the font family.
 16. font-family: "Times New Roman", serif - it is important to use double quotes for the fonts that have spaces.
 The system will recognise it only if it is mentioned in double quotes.
