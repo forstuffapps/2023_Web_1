@@ -98,5 +98,9 @@ But if you only give 2 values then 1-top&down, 2-right&left.
 these are selctors so they can be anything like id selectors, class selectors
 27. CSS positioning. Static, Relative, Absolute, Fixed.
 Refer to the ink above for better understanding. Do the 7.2 module for practice.
+28. CSS Display property. block, inline, inline-block. 
+29. CSS float, left and right. for removing the float we can use clear : left; , clear : right;, clear : both;.
+30. The reason they use the keyword screen in media query is that it will only be used when they print.
+31. 
 
 
