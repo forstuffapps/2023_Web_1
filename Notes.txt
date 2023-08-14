@@ -10,7 +10,7 @@
 4. CSS Positioning : https://appbrewery.github.io/css-positioning/
 5. Flexbox guide : https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 6. Practice Flex-Box : https://appbrewery.github.io/flexboxfroggy/
-7.  
+7. 
 
 
 
@@ -105,6 +105,13 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
 30. The reason they use the keyword screen in media query is that it will only be used when they print.
 31. we use display : flex; or display : inline-flex;, and gap : 10px;
 32. flex-direction: row; , column;. flex-basis : more like padding towards the flex-direction.
-33. 
+33. Flex sizing : content width < Width or Height < Flex-Basis < Min-width/Max-width.
+    1. if width : 100px; but the container is too small it will override the width and shrink the data(items)
+    2. width : 100px; and flex-basis : 200px; in this case the width is overridden and flex-basis is considered.
+    But if the container doesn't have 200px then it will consider the min-width.
+    3. flex-basis : 200px; max-width : 100px; then it will consider the max-width.
+    4. if the flex-basis : 50px; and max-width : 100px; then it will consider flex-basis i.e that 50px;
+    5. flex-basis : 200px; min-width : 300px; item size will be 300px; and it will disappear(go-off) below this point.
+    6. 
 
 
