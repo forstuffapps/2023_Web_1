@@ -10,7 +10,8 @@
 4. CSS Positioning : https://appbrewery.github.io/css-positioning/
 5. Flexbox guide : https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 6. Practice Flex-Box : https://appbrewery.github.io/flexboxfroggy/
-7. 
+7. Flex-Layout : https://appbrewery.github.io/flex-layout/
+8. 
 
 
 
@@ -112,6 +113,15 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     3. flex-basis : 200px; max-width : 100px; then it will consider the max-width.
     4. if the flex-basis : 50px; and max-width : 100px; then it will consider flex-basis i.e that 50px;
     5. flex-basis : 200px; min-width : 300px; item size will be 300px; and it will disappear(go-off) below this point.
-    6. 
+    6. flex-basis : 100px; flex-grow: 0; flex-shrink: 0; then the container items will start at 100px and doesn't grow or shrink.
+    they stay constant.
+    7. flex-basis : 100px; flex-grow : 1; flex-shrink : 0; then the intial item size value will be 100px; but the items in 
+    teh container will grow upto the window size. But they only shrink until the 100px size and then later the data goes off.
+    8. flex-basis : 100px; flex-grow : 0; flex-shrink : 1; then the intial size is always 100px but it will not grow.
+    but it will shrink until the min-width(default...content-width...min word len). Then later it will go-off data will disappear.
+    9. flex-basis: 100px; flex-grow: 1; flex-shrink: 1; then it will grow to maximum deoth and it will shrink to minimum depth.
+    10. flex-basis : auto; flex-grow : 1; flex-shrink : 1; then it will assign individual size to each and every item based on its word len.
+    and the sizes grow and shrink dynamically depending on the window size.
+    11. flex : 1 1 0; this means grow=1, shrink=1, flex-basis=0; 
 
 
