@@ -13,7 +13,8 @@
 7. Flex-Layout : https://appbrewery.github.io/flex-layout/
 8. Grid vs Flexbox : https://appbrewery.github.io/grid-vs-flexbox/
 9. Grid Sizing : https://appbrewery.github.io/grid-sizing/
-10. 
+10. Grid Garden Exercise : https://appbrewery.github.io/gridgarden/
+11. 
 
 
 
@@ -140,6 +141,9 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     If we declare sizes for less items then the remaining items will go down but with the content size.
     So to handle the future divs or non-declared divs we use grid-auto-rows : 100px; grid-auto-columns : 100px;
     4. Grid placement... we use grid-column : span 2;
+    grid-area : 2 / 1 / 3 / 3; which is grid-row-start / grid-column-start / grid-row-end / grid-column-end
+    Note : if you want to use grid area then use grid area on all the items.
+
 
 
 
