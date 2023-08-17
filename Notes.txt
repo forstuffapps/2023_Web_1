@@ -132,14 +132,14 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     grid-template-columns : 200px auto; -> the 1st column will be 200px wide and the 2nd column will occupy as much space as it can.
     grid-template-rows : 100px auto; the 1st row occupies 100px size but the 2nd row occupies only the content size(fit content). *** impo note ***
     For the Grid Sizing
-    1. Fixed Sizing. Auto Size using auto keyword. 
+    3. Fixed Sizing. Auto Size using auto keyword. 
     Fractional Size uses "fr"
     MinMax size : 100px minmax(400px, 800px)
     Repeat : repeat(2, 100px) this is same as 100px 100px
     if the matrix is more than the items then it starts filling from row 1 and leaves empty spaces in the remaining
     If we declare sizes for less items then the remaining items will go down but with the content size.
     So to handle the future divs or non-declared divs we use grid-auto-rows : 100px; grid-auto-columns : 100px;
-
+    4. Grid placement... we use grid-column : span 2;
 
 
 
