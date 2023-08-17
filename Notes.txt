@@ -11,7 +11,9 @@
 5. Flexbox guide : https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 6. Practice Flex-Box : https://appbrewery.github.io/flexboxfroggy/
 7. Flex-Layout : https://appbrewery.github.io/flex-layout/
-8. 
+8. Grid vs Flexbox : https://appbrewery.github.io/grid-vs-flexbox/
+9. Grid Sizing : https://appbrewery.github.io/grid-sizing/
+10. 
 
 
 
@@ -123,5 +125,21 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     10. flex-basis : auto; flex-grow : 1; flex-shrink : 1; then it will assign individual size to each and every item based on its word len.
     and the sizes grow and shrink dynamically depending on the window size.
     11. flex : 1 1 0; this means grow=1, shrink=1, flex-basis=0; 
+34. Grid. Difference between flex and grid. Flex is a tool to align content on a one dimension.
+    Grid is a tool to layout content on a 2 dimensional plane.
+    1. Instead of using both grid-template-rows and grid-template-columns we can just use grid-template : 1fr 2fr / 1fr 1fr;
+    2. we can use "auto" in the template-rows. 
+    grid-template-columns : 200px auto; -> the 1st column will be 200px wide and the 2nd column will occupy as much space as it can.
+    grid-template-rows : 100px auto; the 1st row occupies 100px size but the 2nd row occupies only the content size(fit content). *** impo note ***
+    For the Grid Sizing
+    1. Fixed Sizing. Auto Size using auto keyword. 
+    Fractional Size uses "fr"
+    MinMax size : 100px minmax(400px, 800px)
+    Repeat : repeat(2, 100px) this is same as 100px 100px
+    if the matrix is more than the items then it starts filling from row 1 and leaves empty spaces in the remaining
+    If we declare sizes for less items then the remaining items will go down but with the content size.
+    So to handle the future divs or non-declared divs we use grid-auto-rows : 100px; grid-auto-columns : 100px;
+
+
 
 
