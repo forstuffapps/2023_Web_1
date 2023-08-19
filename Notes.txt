@@ -14,7 +14,8 @@
 8. Grid vs Flexbox : https://appbrewery.github.io/grid-vs-flexbox/
 9. Grid Sizing : https://appbrewery.github.io/grid-sizing/
 10. Grid Garden Exercise : https://appbrewery.github.io/gridgarden/
-11. 
+11. Practice Bootstrap Layout : https://appbrewery.github.io/bootstrap-layout/
+12. 
 
 
 
@@ -146,7 +147,19 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
 35. Bootstrap. There are many other CSS frameworks like Bootstrap. They are Foundation, MUI, Tailwind.
     1. down sides of CSS frameworks are class boats. It wont look clean and neat when we look at their class names.
     2. We wont have full control if we use CSS frameworks.
-    3. 
+    3. Bootstrap uses a 12 column layout structure. and the code structure looks like a container_div -> row_div -> column_div
+    "col-2" will occupy 2 columns and "col-4" occupies 4 columns.
+    if you declare only 3 columns then those 3 columns will take the space of 12 default columns. where each column takes 4 column space.
+    4. Bootstrap breakpoints has sm : small (Mobile), 
+    md : medium (ipad and tablets)
+    lg : large (laptops)
+    xl : (desktops)
+    xxl : huge displays
+    5. We can declare the column class as col-sm-2, col-sm-4
+    We can declare multiple breakpoints in a single class declaration "col-sm-12 col-md-8 col-lg-4". 
+    if we declare col-2, col-4, then write the remaining one as col then it will take whatever columns left.
+
+
 
 
 
