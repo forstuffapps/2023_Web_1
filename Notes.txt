@@ -143,7 +143,10 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     4. Grid placement... we use grid-column : span 2;
     grid-area : 2 / 1 / 3 / 3; which is grid-row-start / grid-column-start / grid-row-end / grid-column-end
     Note : if you want to use grid area then use grid area on all the items.
-
+35. Bootstrap. There are many other CSS frameworks like Bootstrap. They are Foundation, MUI, Tailwind.
+    1. down sides of CSS frameworks are class boats. It wont look clean and neat when we look at their class names.
+    2. We wont have full control if we use CSS frameworks.
+    3. 
 
 
 
