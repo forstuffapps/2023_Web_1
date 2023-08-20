@@ -158,6 +158,7 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     5. We can declare the column class as col-sm-2, col-sm-4
     We can declare multiple breakpoints in a single class declaration "col-sm-12 col-md-8 col-lg-4". 
     if we declare col-2, col-4, then write the remaining one as col then it will take whatever columns left.
+    6. All of the default bootstrap clases come from utilities.css
 
 
 
