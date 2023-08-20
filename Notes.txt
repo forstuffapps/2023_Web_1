@@ -15,7 +15,8 @@
 9. Grid Sizing : https://appbrewery.github.io/grid-sizing/
 10. Grid Garden Exercise : https://appbrewery.github.io/gridgarden/
 11. Practice Bootstrap Layout : https://appbrewery.github.io/bootstrap-layout/
-12. 
+12. Bootstrap spacing notations : https://getbootstrap.com/docs/4.0/utilities/spacing/
+13. 
 
 
 
@@ -159,6 +160,7 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     We can declare multiple breakpoints in a single class declaration "col-sm-12 col-md-8 col-lg-4". 
     if we declare col-2, col-4, then write the remaining one as col then it will take whatever columns left.
     6. All of the default bootstrap clases come from utilities.css
+    7. Read the Bootstrap spacing. https://getbootstrap.com/docs/4.0/utilities/spacing/
 
 
 
