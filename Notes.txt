@@ -162,6 +162,16 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     6. All of the default bootstrap clases come from utilities.css
     7. Read the Bootstrap spacing. https://getbootstrap.com/docs/4.0/utilities/spacing/
 
+36. Web Design understanding. 
+    1. how do we make our brand stronger.
+    And there's very very few things that we can think of that can actually produce a three times improvement
+    in the value of your product or in the value of your company.
+    So design is really really powerful.
+    It's one of the cheapest ways to make your company or your product look expensive because it's elevating.
+    2. There are 4 pillars of web design. Color Theory, Typography, UI design, UX design.
+    3. Analogous colors from the color wheel are good using for navigating bars
+    4. Taking the opposite colors the complimentary colors will look so pop out.
+
 
 
 
