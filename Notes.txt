@@ -20,7 +20,7 @@
 14. For getting colors(Analogous, Complimentary, Monochromatic) : https://color.adobe.com/create/color-wheel
 15. Daily UI and collect UI
 16. Refer this example website for Portfolio : https://appbrewery.github.io/capstone-2-example/
-17. 
+17. all the APPbreery resources : https://appbrewery.com/p/web-development-course-resources
 
 
 
@@ -196,7 +196,10 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     You can open the JS console in the web chrome developer tools and run the javascript from the console itself.
     1. In chrome dev tools -> in the sources -> Insie the sources click menu section(>>) -> select snippets -> 
     then you can create js files and run them.
-    2. "alert("Hellow"); - alert is function Hellow is Message and semicoln is end. 
+    2. "alert("Hellow"); - alert is function Hellow is Message and semicoln is end.
+    3. use this link to check what stylistic choices to use in javascript. https://appbrewery.com/p/web-development-course-resources
+    4. Empty cache and hard reload will doesn't erase the script but only remove the stored cache. like stored variable data.
+     
 
 
 
