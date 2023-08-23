@@ -17,6 +17,10 @@
 11. Practice Bootstrap Layout : https://appbrewery.github.io/bootstrap-layout/
 12. Bootstrap spacing notations : https://getbootstrap.com/docs/4.0/utilities/spacing/
 13. TinDog Website : https://appbrewery.github.io/tindog/
+14. For getting colors(Analogous, Complimentary, Monochromatic) : https://color.adobe.com/create/color-wheel
+15. Daily UI and collect UI
+16. Refer this example website for Portfolio : https://appbrewery.github.io/capstone-2-example/
+17. 
 
 
 
@@ -171,6 +175,18 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     2. There are 4 pillars of web design. Color Theory, Typography, UI design, UX design.
     3. Analogous colors from the color wheel are good using for navigating bars
     4. Taking the opposite colors the complimentary colors will look so pop out.
+    Do not use the complimentary colors for texts and their backgrounds.
+    We can use the triangle to pick the 3 colors or square to pick 4 colors.
+    5. Try to manage the mood with the fonts.
+    6. User-Interface : Use heirarchy. Do it by color, size, fonts. Layout.
+    The ideal length of a paragraph is to maintain 40 to 60 characters per line. 
+    Now one of the easiest ways of making any sort of design you create look professional is just to reduce
+    the number of alignment points.
+    White spacing. Spacing around the items makes it look expensive and professional.
+    Design for your Audience.
+    7. Simplicity matters. Consistency. Keep the design and functionality of the product consistent.
+    Use the F-layout or Z-layout. Dont force the users to do something. like using dark patterns. 
+
 
 
 
