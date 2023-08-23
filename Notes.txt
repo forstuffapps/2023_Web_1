@@ -188,6 +188,16 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     Use the F-layout or Z-layout. Dont force the users to do something. like using dark patterns. 
 
 
+#---JavaScript
+39. Throughtout the 90's there was Netscape Navigator. Netscape was handling the 80% market share.
+40. Brendan Eich first created the javascript in 10 days.
+    Javascript was first once called Livescript and microsoft reverse engineer it to JScript.
+    Javascript is almost supported in all the browsers
+    You can open the JS console in the web chrome developer tools and run the javascript from the console itself.
+    1. In chrome dev tools -> in the sources -> Insie the sources click menu section(>>) -> select snippets -> 
+    then you can create js files and run them.
+    2. "alert("Hellow"); - alert is function Hellow is Message and semicoln is end. 
+
 
 
 
