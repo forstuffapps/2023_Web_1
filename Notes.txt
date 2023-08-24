@@ -200,8 +200,13 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     3. use this link to check what stylistic choices to use in javascript. https://appbrewery.com/p/web-development-course-resources
     4. Empty cache and hard reload will doesn't erase the script but only remove the stored cache. like stored variable data.
 41. the onload attribute tells that when the tag is executed the onload function is excecuted.
-42. 
-
+42. DOM - Document Object Model. It is used to change the elements data dynamically. It converts the HTML elements into tree.
+    it turns each of these elements and their associated data into a tree structure with a whole bunch of objects that you can select and manipulate.
+    The root is document. Thats how you call the objects i.e nodes. other elements.
+    Our objects inside the DOM can have properties and methods. Properties describe something about the object.
+    Method is something object can do.
+43. firstElementChild. getElementsByTagName has plural of Elements which give an array even though it has only one element.
+    querySelector picks the very first element with that selector.
 
 
 
