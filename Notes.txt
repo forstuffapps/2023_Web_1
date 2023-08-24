@@ -207,6 +207,29 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     Method is something object can do.
 43. firstElementChild. getElementsByTagName has plural of Elements which give an array even though it has only one element.
     querySelector picks the very first element with that selector.
-
+    querSelectorAll gives all the elements with that selector. 
+    document.querySelector("li").style.color = "red";
+    You will use querySelector more often than getElement for selecting individual objects. 
+44. The object css properties are always camel case like font-size in css but in the DOM it will be fontSize.
+    HTML is Content. CSS is style. Javascript is Behaviour. 
+    So you create styles with classes in style sheet but add them to objects using javascript.
+    Thats how dynamically we can change the properties.
+    document.querySelector("btn").classList.add("invisible");
+    where as in style sheet we have already defined the class invisible
+    .invisible{
+        visibility : hidden;
+    }
+    in the same way we can remove the class for the object using classList.remove
+    The toggle methods works like if the class is already added then remove it. if it is not there then add it.
+45. So the innerHTML actually edits the content in between the tags. 
+    document.querySelector("h1").innerHTML = "<em>Good Bye</em>";
+    we can add tags.
+    but what if <h1><em>Hello</em></h1>
+    then if you try to acces like this document.querySelector("h1").innerHTML then the value is <em>Hello</em>.
+    so to access only the content we have anothe rproperty called textContent. 
+    document.querySelector("h1").textContent = "Good Bye";
+46. document.querySelector("a").attributes; gives the attributes as a list.
+    document.querySelector("a").getAttribute("href"); give the value.
+    document.querySelector("a").setAttribute("href","https://www.bing.com"); changes the attribute value.
 
 
