@@ -242,7 +242,7 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     document.querySelector("h1").addEventListener("click", function(){
         alert()
     });
-
+    addEventListener(type, method). type represents the type of event and method represents the method to be executed when type of event occured.
     once if a event listener is written then it continuously actively listening. and executes any number of times the event is served.
 
     $0 will work as that object. 
@@ -261,12 +261,25 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     function Bell(name)
     {
         this.name = name;
+        this.move = function() {
+            alert("Hello");
+        }
     } 
+
+
 
     Initialise object 
     var b1 = new Bell("Timmy");
-
+    b1.move(); we call this function like this.
     Constructor function always starts with capital letter.
+
+    document.addEventListener("keydown", function(event){
+        trigger_audio(event.key)
+    });
+    in js event listener we can send the event to a function. that event has all the parameters relevent to the event.
+    the parameter should not be just the event but with any name like evt, et anything.
+    the funtion which was sent as a parameter is called callback function
+
 
 
 
