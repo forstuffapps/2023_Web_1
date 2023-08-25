@@ -255,7 +255,7 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     debugger is useful to debug the code step by step.
     use it for debugging. really useful.
 
-    keyword this represents the identity of that target that triggered the event.
+    keyword "this" represents the identity of that target that triggered the event.
 
     Constructor function
     function Bell(name)
@@ -268,7 +268,7 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
 
     Constructor function always starts with capital letter.
 
-    
+
 
 
 
