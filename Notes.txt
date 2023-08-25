@@ -231,5 +231,44 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
 46. document.querySelector("a").attributes; gives the attributes as a list.
     document.querySelector("a").getAttribute("href"); give the value.
     document.querySelector("a").setAttribute("href","https://www.bing.com"); changes the attribute value.
+47. Event listeners in JS. they trigger methods whenever specified event is delivered to the targets.
+    targets are document, element, window. 
+    document.querySelector("h1").addEventListener("click", function_1);
+    you never write the function_1() with parenthesis. writing with parenthesis acts as a method call.
+    Because when we write it with parenthesis it will directly execute the method when the script is directly located in the html file.
+    instead of waiting for the event(click) and then getting triggered.
+
+    People write anonymus functions in the event listeners
+    document.querySelector("h1").addEventListener("click", function(){
+        alert()
+    });
+
+    once if a event listener is written then it continuously actively listening. and executes any number of times the event is served.
+
+    $0 will work as that object. 
+
+    The functions which can take other functions as input are called Higher order functions.
+
+    debugger;
+    execute statements.
+
+    debugger is useful to debug the code step by step.
+    use it for debugging. really useful.
+
+    keyword this represents the identity of that target that triggered the event.
+
+    Constructor function
+    function Bell(name)
+    {
+        this.name = name;
+    } 
+
+    Initialise object 
+    var b1 = new Bell("Timmy");
+
+    Constructor function always starts with capital letter.
+
+    
+
 
 
