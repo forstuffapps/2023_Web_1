@@ -279,6 +279,50 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     in js event listener we can send the event to a function. that event has all the parameters relevent to the event.
     the parameter should not be just the event but with any name like evt, et anything.
     the funtion which was sent as a parameter is called callback function
+48.
+    If you want your js script to be executed only when the jquery is loaded and ready u write like this
+    $(document).ready(function(){
+
+    });
+
+
+    if you write both the jquery plugin and js script tag in head section they may not work so for that you use the ready function.
+    But if you wite both at the end of body tag then no need of ready method.
+
+    $("h1").css("color"); this will return the value of color.
+
+    $("h1").addClass("big-title");
+    removeClass, hasClass.
+    The $ matches all the elements.
+    text("qwe") change the text of the element.
+    attr for attribute
+    adding event listeners
+    $("h1").click(function(){
+        $("h1").css("color", "red");
+    })
+
+
+    $(document).on("keypress", function(event){
+        $('h1').text(event.key);
+    });
+
+    $("h1").before("<button>q1</button>");
+    adds the button before the h1 tag. <button>q1</button> <h1>Hellow</h1>
+    after adds after the h1 tag in the next line.
+    prepend and append adds in the same line but before and after the button
+    prepend  -->    <h1><button>q1</button>Hellow</h1>  adds before the h1 but still inside the h1 tag
+    $("button").remove();  -->  will remove all of the buttons in our web page.
+
+    $("h1").hide();  -- >  it actually hides the element
+    $("h1").show();  -->  it re-appears the element
+    $("h1").toggle();  -->  it toggles in between hide and show and switches.
+
+    similarly we have more naimations methods. Slideup, slidedown, slidetoggle, Fadein, fadeout, fadetoggle.
+    .animate() lets you build your custom css to animate. in animate always make sure the value is a number. can't take strings.
+    $("h1").animate({opacity: 0.5, margin : "20%"});
+    we can also chain the methods.
+    $("h1").slideUp().slideDown().animate({opacity:0.5});
+
 
 
 
