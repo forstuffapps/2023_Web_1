@@ -322,6 +322,23 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     $("h1").animate({opacity: 0.5, margin : "20%"});
     we can also chain the methods.
     $("h1").slideUp().slideDown().animate({opacity:0.5});
+49. Cntrl A begining of command, Cntrl E, end of the command. Cntrl U clears the command.
+    mkdir Folder_Name. 
+    touch text_2.txt --> which creates the file
+    start text_2.txt --> opens the file in UI
+    code text_2.txt --> opens the file in VS code editor
+    rm text_2.rtf will delete the file
+    rm text_* will remove multiple files.
+    pwd tells the current entire path.
+    rm -r Dir_name/  --> removes the directory
+50. You need a backend framework because it provides pre-built components and structures.
+51. Node.js : An asynchronous event-driven javascript runtime, Node.js is designed to build scalable network applications.
+    asynchronous means does multiple functionalities at a time. event-driven means parts of code executes based on events.
+    because of its asynchronous in nature it is non-blocking.
+    and node is also scalable.
+    it also got a huge eco system.
+    
+
 
 
 
