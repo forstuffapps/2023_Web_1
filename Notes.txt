@@ -337,10 +337,31 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     because of its asynchronous in nature it is non-blocking.
     and node is also scalable.
     it also got a huge eco system.
-    Node REPL : Read Eval Print Loop.
-
-
-
+    Node REPL : Read Eval Print Loop. It is the environment where user inputs are read and evaluated and returned back to the user.
+    use cntrl c to exit of any command line.
+    node index.js will execute the code like the console in the chrome dev tools.
+    Native node modules are nothing but starting tool set.
+    You need node to built apllications on the server side. For use of File access(reading and writing into the local file system)
+    and networking over the internet for backend functionality.
+    native modules comes as pre bundles like the games. Almost all of the old games are pre-bundled. 
+    As node js liberates the javascript out of the browser so the files in your system can be altered.
+    Using the File System which is a Native Node module that allows us to acces the local storage.
+    npm conatins many modules and componenets wher ewe can use. which were contributdd  by devs. 
+    it is more like a community tool library.
+    npm init for configuring our package
+    npm install  
+    the package.json is our configuration file. 
+    import module is for importing the ecma scripts
+    import object/method_name from npm_package
+    you have to insert a "type" : "module", in your json file to run the es scripts.
+    npm init -y --> will give the old json data i.e your package details and updates it to the package.json.
+    Node is not a framework but a run-time environment. that runs the javascript on a computer not limited to a browser.
+52. ExpressJS. It is a JS Framework that allows us to create backends for our websites. 
+    Most preofessional web developes build theior backend using node and express.
+    Even VScode is built usng nodejs.
+    We can also built a small backend only with node without including express but it would be more complex. 
+    but with Express it is readable, less code, middleware. 
+    
 
 
 
