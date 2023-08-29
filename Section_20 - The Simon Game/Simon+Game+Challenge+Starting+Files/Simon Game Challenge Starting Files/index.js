@@ -49,17 +49,26 @@ function game()
 };
 
 
-$(document).keypress(function(event)
+$(".start-game").click(function()
 {
-    
-    if (start==false)
+
+    if ($(".start-game").text()=="Reset")
     {
+        location.reload(true);
+    }
+    else if (start==false)
+    {
+        $(".start-game").text("Reset")
         $("body").removeClass("game-over");
+        start=true;
         A = [];
         U = [];
-        start=true;
         setTimeout(game, 1000);
     }
+    
+        
+    
+    
     
 });
 

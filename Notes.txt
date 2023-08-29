@@ -361,6 +361,16 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     Even VScode is built usng nodejs.
     We can also built a small backend only with node without including express but it would be more complex. 
     but with Express it is readable, less code, middleware. 
+    Express Server using nodeJS and Express. 
+    import express from "express"
+    const app = express()
+    app.listen(3000, () =>
+    {
+        console.log("server is runnign on port 3000");
+    })
+
+    app.listen actuallt takes 2 arguments one is port number and the other one is a call back function that executes when the server is
+    all set and to listen on 3000. 3000 is where our server is listening to client requests.
     
 
 
