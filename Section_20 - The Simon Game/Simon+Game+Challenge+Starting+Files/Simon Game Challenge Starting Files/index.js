@@ -49,16 +49,16 @@ function game()
 };
 
 
-$(".start-game").click(function()
+$("#start-game").click(function()
 {
 
-    if ($(".start-game").text()=="Reset")
+    if ($("#start-game").text()=="Reset")
     {
         location.reload(true);
     }
     else if (start==false)
     {
-        $(".start-game").text("Reset")
+        $("#start-game").text("Reset")
         $("body").removeClass("game-over");
         start=true;
         A = [];

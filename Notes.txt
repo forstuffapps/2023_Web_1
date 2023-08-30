@@ -371,6 +371,21 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
 
     app.listen actuallt takes 2 arguments one is port number and the other one is a call back function that executes when the server is
     all set and to listen on 3000. 3000 is where our server is listening to client requests.
+    Using our own computer as a server for our website backend.
+    http://localhost:3000
+    port number is like a door number in our server to look for. It looks through the port number and search for the required resource.
+    each every port has a unique number so each and every service, application, hardware can tap into each individual port,
+    so in this way we have multiple services, applications running at the same time.
+    command for finding out all the listeners : netstat -ano | findstr "LISTENING"
+    HTTP : Hyper Text Transfer Protocol
+    TP describes its a language for computer to talk over the internet.
+    You cannot up 2 servers on the same port. 
+    nodemon restarts the server automatically when a change is detected
+    npm i -g nodemon : the -g command refers to install the package globally on my computer to use them regularly.
+    /en /ca are the end points. which were written after the slash are calle dthe end points.
+    by hitting the "/" we always target the home page
+    http response codes types : https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+    
     
 
 

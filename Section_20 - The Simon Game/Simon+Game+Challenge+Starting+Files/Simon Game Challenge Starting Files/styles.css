@@ -26,9 +26,9 @@ body {
   border-radius: 20%;
 }
 
-.start-game{
+#start-game{
 background-color: #FEF2BF;
-font-family: 'Press Start 2P', cursive;
+font-family: 'Press Start 2P', 'cursive';
 color : #011F3F;
 height: 50px;
 width: 200px;
