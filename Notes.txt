@@ -385,7 +385,9 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     /en /ca are the end points. which were written after the slash are calle dthe end points.
     by hitting the "/" we always target the home page
     http response codes types : https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
-    
+    npm install will install all the dependencies.
+    Middleware : body-parser is the famous module. It can look at the requests body before the handlers can access them.
+     
     
 
 
