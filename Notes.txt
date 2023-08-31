@@ -387,7 +387,8 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     http response codes types : https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
     npm install will install all the dependencies.
     Middleware : body-parser is the famous module. It can look at the requests body before the handlers can access them.
-     
+    We need to use the app.use before any of the route handlers.
+    
     
 
 
