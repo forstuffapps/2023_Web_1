@@ -394,6 +394,8 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     3. Error handling
     4. Login requests
     Body-parser belongs to pre-processing.
+    morgan belongs to Logging.
+    
     
 
 
