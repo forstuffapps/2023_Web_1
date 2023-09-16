@@ -395,7 +395,14 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     4. Login requests
     Body-parser belongs to pre-processing.
     morgan belongs to Logging.
+    You can customise the middleware use method with method (req, res, next)... where you can call the next() method
+    when you feel you have done the middleware. the next method will go the next blocks od code. If you want to implement
+    multiple middlewares like authentication before logging in then you can use this.
+    authentication next()
+    loggin in next()
+    get - /
     
+
     
 
 
