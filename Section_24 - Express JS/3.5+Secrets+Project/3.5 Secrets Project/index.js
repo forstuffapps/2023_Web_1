@@ -15,20 +15,25 @@ const app = express();
 const port = 3000;
 var matched = false;
 
-app.use(bodyParser.urlencoded({extended : true}));
 
 
 function secrets(req, res, next) {
     
     if (req.body["password"]=="ILoveProgramming")
     {
-        matched = true;
+        //matched = true;
+        res.sendFile(__dirname + "/public/secret.html");
+    }
+    else
+    {
+        res.sendFile(__dirname + "/public/index.html")
     }
     next();
 }
 
+app.use(bodyParser.urlencoded({extended : true}));
 
-app.use(secrets)
+//app.use(secrets)
 
 
 app.get("/", (req, res) =>{
@@ -36,7 +41,9 @@ app.get("/", (req, res) =>{
 })
 
 
-app.post("/check", (req, res) =>{
+app.post("/check", secrets);
+/*
+(req, res) =>{
     if(matched)
     {
         res.sendFile(__dirname + "/public/secret.html");
@@ -46,6 +53,7 @@ app.post("/check", (req, res) =>{
         res.sendFile(__dirname + "/public/index.html")
     }
 });
+*/
 
 
 app.listen(port, () =>{
