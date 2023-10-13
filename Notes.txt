@@ -52,7 +52,7 @@
     <head>
     <link rel="stylesheet" href="./styles.css" />
     </head>
-    in the baove rel represents the relationship with the file and href represents the location
+    in the above rel represents the relationship with the file and href represents the location
     if we are styling the h1, a, p tags then its called the lement selector
     selector represents that which part of the html should the rules apply to. rules written in the curly braces.
     class selector in css starts with a .
