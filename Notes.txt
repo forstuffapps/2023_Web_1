@@ -402,7 +402,8 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     loggin in next()
     get - /
     
-
+53. EJS. We use templating to reder data on the frontend. multiple templating languages : handlebars, pug, TWIG (PHP),
+     Jinja (Python), EJS.  
     
 
 
