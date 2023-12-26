@@ -403,7 +403,13 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     get - /
     
 53. EJS. We use templating to reder data on the frontend. multiple templating languages : handlebars, pug, TWIG (PHP),
-     Jinja (Python), EJS.  
+    Jinja (Python), EJS.  
+    See the EJS Tags for syntaxes
+    So if you use the if(fruits) to check if theres something in fruits and then use it ... it actually doesn't work 
+    like that. ejs tries to check fruits "Oh theres nothing then lets crash it". We need to understand the difference
+    how javascript and EJS works differently.
+    
+
     
 
 
