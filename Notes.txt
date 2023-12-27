@@ -21,6 +21,8 @@
 15. Daily UI and collect UI
 16. Refer this example website for Portfolio : https://appbrewery.github.io/capstone-2-example/
 17. all the APPbreery resources : https://appbrewery.com/p/web-development-course-resources
+18. Learn git commands by visualizing and practicing : https://learngitbranching.js.org/
+19. 
 
 
 
@@ -408,6 +410,23 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     So if you use the if(fruits) to check if theres something in fruits and then use it ... it actually doesn't work 
     like that. ejs tries to check fruits "Oh theres nothing then lets crash it". We need to understand the difference
     how javascript and EJS works differently.
+
+54. Git : 
+    ls -a : gives the list of hidden files too
+    git log : will show the activity. Commits with details.
+    git diff filename : it will give the differences of current file and commited repo.
+    git checkout filename : will go back to the original file (or) previous file that was commited.
+    git rm --cached -r . : After adding files to staging and want to remove those files. use this command. 
+    rm for remove and -r for recursive and '.' for all the files
+    .gitignore : you can specify which files to be hidden. specify the files name in .gitignore file. 
+    you can write comments with '#' and '*.txt' this will hide all the files with txt extension.
+    git branch : it will show the list of branches. And the current branch is bulleted with astrick.
+    git checkout m1; git merge m2; : In this case imagine if c1->m1, c2->m2, a new commit will be created for m1 c3 
+    which will have combination of c1 and c2. c1->c3<-c2.  c3->m1.
+    But now if you do git checkout m2; git merge m1; it wont create a new commit, because m2 now is the ancestor of m1.
+    so it will directly merge it. the branch always has the latest commit. brnahc is nothing but having a commit.
+
+
     
 
 
