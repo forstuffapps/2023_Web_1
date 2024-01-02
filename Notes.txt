@@ -427,6 +427,11 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     so it will directly merge it. the branch always has the latest commit. brnahc is nothing but having a commit.
 
 
+55. API's : 
+    https://bored-api.appbrewery.com/filter?type=social&participants=2  => query parameters are separated by & and started with '?'.
+    query parameters are for filtering and searching.
+    path parameters are for identifying a resource.
+    JSON : in json the kays are strings but values are dynamic. Where as in javascript object keys stay as keys.
     
 
 
