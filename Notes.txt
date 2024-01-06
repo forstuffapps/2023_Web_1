@@ -410,6 +410,9 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     So if you use the if(fruits) to check if theres something in fruits and then use it ... it actually doesn't work 
     like that. ejs tries to check fruits "Oh theres nothing then lets crash it". We need to understand the difference
     how javascript and EJS works differently.
+    app.use(express.static("public"));  :  for declaring your public folder so that partials will be picked by EJS tags
+    locals.result to check if the data exists if(locals.result) {} else {} 
+
 
 54. Git : 
     ls -a : gives the list of hidden files too
@@ -432,6 +435,12 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     query parameters are for filtering and searching.
     path parameters are for identifying a resource.
     JSON : in json the kays are strings but values are dynamic. Where as in javascript object keys stay as keys.
+    Use axios for making your backend make requests to another server.
+    Authentication is of four types 
+    0. No Authentication
+    1. Basic Authentication
+    2. API Key Authorisation
+    3. Token based authentication
     
 
 
