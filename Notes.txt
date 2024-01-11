@@ -442,6 +442,25 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     2. API Key Authorisation
     3. Token based authentication
     
+    base64decode website will decode your encrypted username and password that was in the Headers of authorization param.
+
+
+    APIKey : while sending api keys it depends on the provider on how do we send the key either as the header or query params.
+    always check the documentation for detailed info. but make sure to include the apikey in the authorization head.
+    we can use axios for server side calling of API's.
+    axios.get(url , {
+        headers : {
+            Authorization : `Basic ${Token}`
+        },
+        params : {
+            apiKey : ""
+        },
+        auth : {
+            username : "",
+            password : ""
+        }
+    })
+
     
 
 
