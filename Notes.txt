@@ -450,7 +450,7 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     we can use axios for server side calling of API's.
     axios.get(url , {
         headers : {
-            Authorization : `Basic ${Token}`
+            Authorization : `Bearer ${Token}`
         },
         params : {
             apiKey : ""
@@ -460,6 +460,41 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
             password : ""
         }
     })
+
+    axios.post(url, body, config)
+    same for put, patch
+
+56. Build own API : 
+    While building our own API. If we are following the RESTful architecture we need to be aware of these 5 categories.
+    More like what makes API RESTful??
+    The key principles of designing a RESTful API. Here is a summary:
+
+1. **HTTP Methods**: The fundamental rule for a RESTful API is to use standard HTTP methods like GET, POST, PUT, PATCH, 
+and DELETE for interactions.
+
+2. **Standard Data Format**: The API should respond with a standard data format, such as JSON or XML, providing a consistent 
+representation of resources.
+
+3. **Client-Server Separation**: In RESTful APIs, clients and servers are separate entities, communicating over a network. 
+This separation allows independent scaling and evolution of each side.
+
+4. **Statelessness**: Each client-server interaction should be self-contained, with all necessary information included in 
+the request. This enhances scalability and simplifies server-side implementation.
+
+5. **Resource-Based**: REST APIs are centered around resources identified by unique resource locators (URLs or URIs). 
+The Internet itself is considered a successful implementation of RESTful architecture.
+
+http://localhost:3000/jokes/:id   =>  in this url the id is called the path variable we say it as path parameter.
+when we give value to the id the url will be reformatted as "http://localhost:3000/4".
+
+in javascript "===" means the value and the type both should be equal. But when you use "==" it just compares the value not type.
+if('2'==2) will be true. if('2'===2) will be False. if(2===2) will be True.
+
+path parameters are in params object and query parameters are in query object
+
+
+
+
 
     
 
