@@ -492,6 +492,8 @@ if('2'==2) will be true. if('2'===2) will be False. if(2===2) will be True.
 
 path parameters are in params object and query parameters are in query object
 
+var v = v1 || v2;
+in the baove case if v1 equal to null then v2 will ve assigned to v. thats how javascript works
 
 
 

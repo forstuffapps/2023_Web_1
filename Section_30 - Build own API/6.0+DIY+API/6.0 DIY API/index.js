@@ -58,21 +58,32 @@ app.patch("/jokes/:id", (req,res) =>{
   jokes.forEach(joke => {
     if(joke.id===id)
     {
-      if( req.body.text){
-        joke.jokeText =  req.body.text
-      }
-    
-      if(req.body.type){
-        joke.jokeType = req.body.type
-      }
+      joke.jokeText = req.body.text || joke.jokeText
+      joke.jokeType = req.body.type || joke.jokeType
       res.json(joke)
     }
   })
 })
 
 //7. DELETE Specific joke
+app.delete("/jokes/:id", (req,res) =>{
+  const id = parseInt(req.params.id)
+  jokes.splice(id-1,1)
+  res.sendStatus(200)
+})
 
 //8. DELETE All jokes
+app.delete("/all", (req,res) =>{
+  const Key = req.query.key
+  if(Key==masterKey)
+  {
+    console.log("enteres the if case")
+    jokes.splice(0, jokes.length)
+  }
+  console.log(Key)
+  console.log(jokes.length==0)
+  res.sendStatus(200)
+})
 
 app.listen(port, () => {
   console.log(`Successfully started server on port ${port}.`);
