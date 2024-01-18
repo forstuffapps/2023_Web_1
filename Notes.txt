@@ -496,14 +496,45 @@ var v = v1 || v2;
 in the baove case if v1 equal to null then v2 will ve assigned to v. thats how javascript works
 
 
+57. SQL : 
+CREATE table products(
+  id INT NOT NULL,
+  name varchar(255),
+  price FLOAT,
+  PRIMARY KEY (id)
+  )
+
+
+  INSER INTO products
+  VALUES (1, "ball", 1.5)
+
+  UPDATE products
+  SET price=0.5
+  WHERE id=2
+
+The ALTER TABLE statement is used to add, delete, or modify columns in an existing table.
+
+
+555555. Authentication : 
+Authentication serves two main purposes: securing user data and restricting access to 
+certain areas of the website based on user status.
+
+LEVEL_1 Authentication : Email & password
+
+
+CREATE TABLE orders(
+    id INT NOT NULL,
+    order_number INT,
+    customer_id INT,
+    product_id INT,
+    PRIMARY KEY (id),
+    FOREIGN KEY (customer_id) REFERENCES customer(id),
+    FOREIGN KEY (product_id) REFERENCES products(id)
+)
+
 
 
     
-
-
-
-    
-
 
 
 
