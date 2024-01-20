@@ -533,6 +533,12 @@ CREATE TABLE orders(
 )
 
 
+id SERIAL PRIMARY KEY
+
+csv - comma separated values
+
+
+
 
     
 
