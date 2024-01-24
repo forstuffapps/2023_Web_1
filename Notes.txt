@@ -540,7 +540,17 @@ An emoji is UTF-8 data type
 Use the TEXT datatype for storing the emojis in database bacuase TEXT handles UTF-8 better.
 
 
+create table world_food (
+    id serial primary key,
+    country varchar(45),
+    rice_production float
 
+);
+
+
+select * from world_foods;
+
+select id, country from world_foods;
 
     
 
