@@ -542,7 +542,7 @@ Use the TEXT datatype for storing the emojis in database bacuase TEXT handles UT
 
 create table world_food (
     id serial primary key,
-    country varchar(45),
+    country varchar(4 5),
     rice_production float
 
 );
