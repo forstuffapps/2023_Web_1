@@ -556,6 +556,19 @@ select id, country from world_foods;
 58. Authentication and security
 No company will store user passwords directly into database. they store in excrypted formats
 Modern Encryption is different we use "aes256".
+Hashing : Hashing is most advanced and most used encryption type. One of the brilliant part of using the hashing is that
+it is irreversible. Convert a text into hash string using the hash function. it is called hash variable. and this hash variable 
+cannot be converted back into the original string. 
+So if a user's password is converted into a hash variable and stored in the DB. When ever the user enters the password it 
+converts the password into hash variable and compares with the one in the DB. So only the user knows the original password. 
+We add salt (which some random string to the OG passwords) and then Has it. So that even though multiple users use same passwords 
+it will be different in the databse. So in database we store the hash and salt both.
+saltrounds : so when we have the salt(random number), if we use that and generate a hash code. That is called one salt round.
+Now with the generated hash code if we again do the hashing with the salt it is saltround 2. 
+So the more saltrounds the more secure. So in future when the GPU's increase then you can simply increase the salt rounds. To 
+make it more secure. We call this bcrypt. latest GPU's has power of 20 billion MD5 hashes per second. But they can only 
+compute 17,000 bcrypts per second. bcrypt uses blowfish cipher technique. Which is industry standard and more secure.
+
 
 
 
