@@ -561,7 +561,7 @@ it is irreversible. Convert a text into hash string using the hash function. it 
 cannot be converted back into the original string. 
 So if a user's password is converted into a hash variable and stored in the DB. When ever the user enters the password it 
 converts the password into hash variable and compares with the one in the DB. So only the user knows the original password. 
-We add salt (which some random string to the OG passwords) and then Has it. So that even though multiple users use same passwords 
+We add salt (which some random string to the OG passwords) and then Hash it. So that even though multiple users use same passwords 
 it will be different in the databse. So in database we store the hash and salt both.
 saltrounds : so when we have the salt(random number), if we use that and generate a hash code. That is called one salt round.
 Now with the generated hash code if we again do the hashing with the salt it is saltround 2. 
