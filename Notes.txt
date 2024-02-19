@@ -570,5 +570,9 @@ make it more secure. We call this bcrypt. latest GPU's has power of 20 billion M
 compute 17,000 bcrypts per second. bcrypt uses blowfish cipher technique. Which is industry standard and more secure.
 
 
+In the passport package : when we define sessions we also give some input : secret : which is a secret key we use for authentication.
+Because when ever we authenticate we are only using sessions. SO they should be secured.
+resave : this defines whether to ave the sessions to session store or not.
+saveUninitialized? : this means whether to store the session in the server.
 
 
