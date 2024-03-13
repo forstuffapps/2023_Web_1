@@ -384,7 +384,7 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     You cannot up 2 servers on the same port. 
     nodemon restarts the server automatically when a change is detected
     npm i -g nodemon : the -g command refers to install the package globally on my computer to use them regularly.
-    /en /ca are the end points. which were written after the slash are calle dthe end points.
+    /en /ca are the end points. which were written after the slash are called the end points.
     by hitting the "/" we always target the home page
     http response codes types : https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
     npm install will install all the dependencies.
