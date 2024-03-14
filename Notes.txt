@@ -22,7 +22,8 @@
 16. Refer this example website for Portfolio : https://appbrewery.github.io/capstone-2-example/
 17. all the APPbreery resources : https://appbrewery.com/p/web-development-course-resources
 18. Learn git commands by visualizing and practicing : https://learngitbranching.js.org/
-19. 
+19. HTTP Response Status Codes : https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+20. 
 
 
 
