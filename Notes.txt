@@ -616,4 +616,7 @@ Here's some additional information about the session store:
 In summary, the session store is a critical component of web application development, responsible for securely storing session data to maintain user sessions across requests. Its configuration and implementation play a significant role in ensuring the security and performance of web applications.
 
 
+Declaring the app.use(session({...})) before the passport is important.
+Because without declaring this session we cannot use the passport session.
+
 
