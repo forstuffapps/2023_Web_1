@@ -70,7 +70,7 @@
         color:red;
     }
     difference between id and class is class is used to apply for many elements but id are only applied for one element. 
-    incase u have a special element wher eyou wish to apply it only for that one then use id
+    incase u have a special element where you wish to apply it only for that one then use id
 12. Attribute selectors
 <p draggable="true">qwe</p>
 <p draggable="false">qwe</p>
