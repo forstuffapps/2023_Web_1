@@ -60,7 +60,7 @@
     selector represents that which part of the html should the rules apply to. rules written in the curly braces.
     class selector in css starts with a .
     <h1 class="cls-name">qwe</h1>
-    .clas-name{
+    .cls-name{
         color:red;
     }
     class selectors always start with the dot
