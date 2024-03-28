@@ -80,7 +80,7 @@
     p[draggable="false"]{
         color:blue;
     }
-    the baove code states that for all the p tag elements which have attribute draggable apply the css
+    the above code states that for all the p tag elements which have attribute draggable apply the css
     you can also specify with the value specific
 13. universal selector
     *{
