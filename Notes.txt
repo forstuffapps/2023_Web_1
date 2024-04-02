@@ -112,7 +112,7 @@ But if you only give 2 values then 1-top&down, 2-right&left.
         5. combining selectors. you can combine the above 4 selectors. selector1 selector2selector3
 these are selectors so they can be anything like id selectors, class selectors
 27. CSS positioning. Static, Relative, Absolute, Fixed.
-Refer to the ink above for better understanding. Do the 7.2 module for practice.
+Refer to the link above for better understanding. Do the 7.2 module for practice.
 28. CSS Display property. block, inline, inline-block. 
 29. CSS float, left and right. for removing the float we can use clear : left; , clear : right;, clear : both;.
 30. The reason they use the keyword screen in media query is that it will only be used when they print.
@@ -131,7 +131,7 @@ Refer to the ink above for better understanding. Do the 7.2 module for practice.
     teh container will grow upto the window size. But they only shrink until the 100px size and then later the data goes off.
     8. flex-basis : 100px; flex-grow : 0; flex-shrink : 1; then the intial size is always 100px but it will not grow.
     but it will shrink until the min-width(default...content-width...min word len). Then later it will go-off data will disappear.
-    9. flex-basis: 100px; flex-grow: 1; flex-shrink: 1; then it will grow to maximum deoth and it will shrink to minimum depth.
+    9. flex-basis: 100px; flex-grow: 1; flex-shrink: 1; then it will grow to maximum depth and it will shrink to minimum depth.
     10. flex-basis : auto; flex-grow : 1; flex-shrink : 1; then it will assign individual size to each and every item based on its word len.
     and the sizes grow and shrink dynamically depending on the window size.
     11. flex : 1 1 0; this means grow=1, shrink=1, flex-basis=0; 
