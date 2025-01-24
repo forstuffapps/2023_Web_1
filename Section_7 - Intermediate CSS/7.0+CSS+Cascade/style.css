@@ -3,6 +3,7 @@
 .box {
   background-color: blue;
   padding: 10px;
+  
 }
 
 p {
@@ -12,14 +13,16 @@ p {
 }
 
 
-.white-text{
-  color: white;
-}
-
-.inner-box{
+.inner-box {
   background-color: red;
 }
 
-#outer-box{
+
+.white-text {
+  color: white;
+}
+
+
+#outer-box {
   background-color: purple;
 }

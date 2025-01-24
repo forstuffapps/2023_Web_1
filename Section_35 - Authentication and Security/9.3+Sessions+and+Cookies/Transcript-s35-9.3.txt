@@ -1,0 +1,816 @@
+Hey guys, in this lesson we're going to talk all about Cookies and Sessions.
+
+Now just a word of warning here during the lesson, if you continue watching, you may start to feel
+
+that you get a little bit hungry.
+
+So don't blame me if I've just completely derailed your diet plan, because in this lesson, we're going
+
+to talk all about cookies and their yummy goodness.
+
+Not really, the type of cookies that we're talking about that relates to web development are more similar
+
+to fortune cookies, because they have a message that's packaged inside, and you can pass these around
+
+and they can be broken to reveal the message.
+
+You've probably come across cookies before, but if you haven't, I just want to show you how it works
+
+in practice.
+
+So let's say we go on to Amazon and we search for the switch, right? The Nintendo Switch.
+
+And we decide to go ahead and add it to basket.
+
+So now when we look inside our basket, you can see we have one item; the switch.
+
+Right?
+
+And then we're going to do something that all e-commerce sites hate,
+
+we're going to go and navigate away and abandon our shopping cart.
+
+Now this to any e-commerce website is a real crime, because the user obviously wanted to buy something,
+
+but then at some point, they got distracted by something else abandoning their cart without checking
+
+out.
+
+So what does Amazon do?
+
+Well, as soon as you added that item to the cart, Amazon has created a cookie and has stored that
+
+cookie on your browser.
+
+So how can we go and view that Cookie well, inside Chrome,
+
+if you go to Settings and you search for cookie.
+
+If you scroll right to the bottom, it shows you that there's something relating to cookies inside Content
+
+Settings.
+
+So if we go over there and we click on Cookies, you can see there's this option to, "See all cookies
+
+and site data."
+
+And now you can see that Amazon has not added just one cookie,
+
+just by doing that very small act of adding a Nintendo Switch to our Amazon basket, Amazon has told
+
+our browser to save all sorts of information about ourselves. And if we click on amazon.co.uk, you
+
+can see there's the session-token, the session-id and these cookies don't necessarily contain any actual
+
+information,
+
+say, "This user wanted to buy a Nintendo Switch," but what they do contain is an ID number, and this
+
+ID will be used to fetch all of those things that you added to your cart during this browsing session
+
+on Amazon.
+
+And this is why, if you decide to go and close down your browser and you open it back up and let's
+
+head back to amazon.co.uk, you can see that my switch is still inside the basket, so they haven't
+
+forgotten this.
+
+So that means the next time I go on to Amazon, that Nintendo Switch is still going to be in my shopping
+
+basket.
+
+However, if we go into those cookies for Amazon,
+
+and we go ahead and delete it...
+
+So let's go back to, "See all cookies and site data,"
+
+we find the one that is directly related to Amazon and we remove all of these.
+
+Now if we go and refresh this website, you can see we've forced it to forget our last browsing session,
+
+and it doesn't know about that Nintendo Switch anymore.
+
+Now on the internet, cookies are used widely to save these browsing sessions, and it goes beyond just
+
+saving your last actions on the website.
+
+When Amazon adds those cookies to my browser, it also means that when I go and visit another website,
+
+say if I go on to Facebook, then it knows who I am and what items I wanted to buy on Amazon, and it
+
+will try to remind me of that thing that I wanted to buy on Amazon.
+
+And it's kind of creepy,
+
+but this is essentially how retargeting ads work.
+
+Once a user comes to your website, initiate some sort of buying behavior, and then they decide to
+
+abandon cart, you save what it is that they wanted, and then on other websites, or when they come
+
+back onto your website, you remind them about that thing that they wanted to buy.
+
+And this is all done through cookies and sessions.
+
+If we review this from a web development point of view, it means that, say, on day one when I go
+
+into Chrome and I type in Amazon.com, my browser will make a GET request to Amazon's server requesting
+
+for their home page.
+
+Amazon Server will then respond to that request and send over the HTML, CSS, and JavaScript files
+
+that are needed for my browser to be able to render the Amazon website.
+
+And then let's say that we decided to add a computer to our cart.
+
+Well, that is equivalent to making a POST request to Amazon server saying that, "I would like to buy
+
+a computer."
+
+Right?
+
+And it's at this moment in time when Amazon servers will create a cookie that contains that data,
+
+"This user wanted to buy a computer." And when it responds to the POST request, that cookie gets sent
+
+along and the browser gets told to save that cookie.
+
+So that means that if I now get distracted and I decide to go on to Facebook or whatever it may be,
+
+but if I come back tomorrow, that cookie is still saved on my browser.
+
+The next time that I make a GET request to Amazon server, that cookie gets sent along with my GET request
+
+to allow the server to be able to identify who I am and see if I had any previous sessions on Amazon.
+
+And it's the equivalent of cracking open that fortune cookie, revealing what were the previous things
+
+that I wanted to buy.
+
+So in this case it was a computer and then they could respond with the HTML, CSS, JavaScript and also
+
+render my cart so that the computer is already added in the cart.
+
+There are lots of different types of cookies, but the types of cookies that we're going to be looking
+
+at, are the ones that are used to establish and maintain a session.
+
+A session is a period of time when a browser interacts with a server.
+
+Usually when you log in to a website, that's when your session starts, and that's when your fortune
+
+cookie gets created.
+
+And inside that fortune cookie, you'll have your user credentials that says, "This user is logged in
+
+and has been successfully authenticated."
+
+So that means as you continue to browse the website, you won't be asked to log in again when you try
+
+to access a page that requires authentication, because they can always check against that active cookie
+
+that you have on your browser, and it maintains your authentication for this browsing session until
+
+the point when you log out, which is when this session ends,
+
+and the cookie that's related to this session gets destroyed.
+
+We're going to be implementing cookies and sessions into our website, and we're going to be doing it
+
+using something called Passport.
+
+Now, if you talk about NodeJS and authentication, it's almost impossible to not mention Passport.
+
+And it's something that's very, very flexible and it allows you to authenticate your users using either
+
+a local strategy like what we're doing right now, which is username and password, or use a whole bunch
+
+of other services such as Google, Facebook, LinkedIn, Twitter.
+
+And it makes it a lot easier for you to be able to plug these different ways of authentication into
+
+your website.
+
+Let's get started learning about Passport and learning about how we can implement cookies and sessions.
+
+Again in this lesson, there is an associated download and that's a zipped file that when you unzip it should
+
+be a folder with files called 9.3 Sessions & Cookies.
+
+As always extract it,
+
+open it in VS Code, run "npm install" once you have navigated to the correct location, and you'll notice that
+
+we've added a couple of new packages in the dependencies for this project compared to last time.
+
+The first one is something called "express-session" , which is the package that we're going to use to
+
+enable this kind of session persistence, which allows us to save a cookie on the user's browser
+
+and the next time they try to access our website, we check that cookie and make sure that we can bypass
+
+that whole login process.
+
+Another tool that we're using in order to work with Express Session is called Passport and Passport.js
+
+is a really neat library because it allows us to add lots of different authentication strategies
+
+into one project very easily.
+
+You can see that there are 500 plus strategies, and that includes a lot of the most commonly used ones.
+
+For example, if you wanted to allow people to log in with Twitter, if you wanted people to log in
+
+with Facebook or Google or GitHub or Microsoft or just a whole bunch of different strategies, you can
+
+implement passport and you'll be able to add each one of these strategies very easily, just as if you're
+
+playing Lego.
+
+So we're going to get started by implementing something called "passport-local", because at the moment
+
+the only strategy we have is local login, which means username and password, or in our case it's email
+
+and password.
+
+To use it, we need the passport module as well as passport-local and also express-session.
+
+So don't worry about spelling it wrong, don't worry about typing it wrong,
+
+it's already included in the package.json,
+
+so once you do that "npm install", those modules will get added automatically into your node_modules
+
+folder.
+
+The code in index.js is completely the same as before, but I want to walk you through step by step
+
+how we can implement cookies, sessions and all in the package of using the passport-local strategy.
+
+The first thing we're going to do is we're going to import something called session from our package,
+
+"express-session",
+
+and this is going to allow us to set up a new session to start saving user login sessions.
+
+So we're going to use this as a middleware.
+
+So use app.use(),
+
+and then we tap into the session and we create a new instance and pass in some options.
+
+What are the options we're going to add.
+
+Most important we need a secret.
+
+And this is the secret that's used to sign the session cookie.
+
+So if you remember what we talked about encryption, this is quite important,
+
+you can consider this as the key that's used to keep the session secret.
+
+Because we're bypassing the login process,
+
+we need to make sure that we are doing everything that we can in order to make sure that we are protecting
+
+the user's login information.
+
+You can set this to any string you like.
+
+So for example, I'm just going to call it, "TOPSECRETWORD".
+
+And in this case you can replace that with whatever you like, just as long as you make sure you add
+
+one.
+
+Next we're going to set resave, to false.
+
+And what this option does is whether if we want to force a session to be saved into the store.
+
+The great thing about session, is you pair it with Postgres and you can save the session to your database.
+
+At the moment I'm not going to do that.
+
+So I'm going to set this resave to false because we're going to save it in our app on our server for
+
+now.
+
+If you wanted to persist this, then you can look up how to use Express session with a Postgres store
+
+to store it.
+
+And that means that even if your server was reset or if you updated your server and restarted it, it
+
+would still work for the user because that information would be on the database. For now,
+
+I think this should do just fine.
+
+So the final one I'm going to set is something called, "saveUninitialized".
+
+And again this is to do with the whether or not we want to force a session to be saved to the store.
+
+And I'm going to set this to true so that we actually store the uninitialized sessions into our server
+
+memory.
+
+Now, once we've done all of that, the next thing we're going to do is we're going to use Passport.
+
+So I'm going to import passport from the "passport" module.
+
+And it's really important that your passport module goes after your session initialization.
+
+You should have already created your session before you use the next lines of code.
+
+This is really important. If you get the order wrong in our middleware because we know it gets run
+
+from top to bottom.
+
+If you haven't got a session that you've already set up, and then you try to do the next thing, which
+
+is again. middleware.,
+
+so app.use() and then it's passport.initialize()
+
+and that requires some parentheses because it's a method.
+
+And then it's app.use(passport.session).
+
+This has to happen after we already have a session that's already ongoing,
+
+otherwise it's not going to work.
+
+So just make sure that you've got the right order in your code as well.
+
+So now that we've done all of that, I'm going to show you what's a really cool thing that you can do,
+
+because we're now using Passport and sessions.
+
+At the moment we're deciding whether or not to show the user secrets.ejs, depending on whether
+
+or not they've passed either registration or login,
+
+but in most cases, you would probably want a route, right?
+
+You would want an app.get() that goes to "/secrets", so that the user can hit up that path straight
+
+away in their URL,
+
+but this has its own challenges, because how do we know if they are already logged in?
+
+Well, if we have an active session that's saved in a cookie, then we can straight away show them that
+
+page,
+
+but if we don't, then we shouldn't show it to them.
+
+The way we do this is we can use something that gets saved into the request, which is called isAuthenticated,
+
+and this comes from Passport and it allows us to check, "Is the current user who's logged in in the current
+
+session authenticated already?"
+
+And if that turns out to be true, then we can show them the secrets page.
+
+So we can say if this is true, then in that case we'll res.render the secrets.ejs,
+
+but otherwise, so, else, we're going to res.redirect to the login route.
+
+That way they'll have to log in first before they see this.
+
+If we go ahead and start up our server as it is, you'll see that if I try to go to that route,
+
+"/secrets", it's going to redirect me straight into the login page.
+
+And if you open up the Chrome Developer Tools, so you can either go through Settings, or you can use the
+
+shortcut which I taught you previously, you'll be able to see that under Cookies,
+
+you may or may not see localhost:3000.
+
+All right.
+
+So how can we implement login for the user who we already have stored on our database right here.
+
+We saw that previously.
+
+We can use their email and password to log in,
+
+but now we want to be able to authenticate that session and start it up in Passport.
+
+So the first thing we're going to do is we're going to import and then add a set of curly braces to
+
+import something called {strategy}.
+
+And this strategy comes from passport-local.
+
+So this is actually also known as a local strategy.
+
+Now the next thing we're going to do is we're going to scroll all the way to the bottom just above our
+
+app.listen(),
+
+and we're going to tap into passport, and say passport.use(),
+
+and we're going to use this to register a strategy.
+
+And the strategy is going to be a new Strategy...
+
+So we can create a new object from this class called strategy.
+
+And inside here we're going to call something called verify().
+
+That's a function called verify(),
+
+and it takes three parameters a username, a password,
+
+and a callback, which in the Passport world is always written as cb.
+
+So now we can open up our curly braces and start adding some code into this strategy.
+
+The fact that it's a local strategy means it's trying to validate whether if a user already has the
+
+right password, if their email exists in the database already,
+
+so basically everything that we've already tried to do inside our login route.
+
+So we can actually cut this entire try-catch block and we can paste it straight in here.
+
+There's one thing that we need to remember about Passport.
+
+It can automatically through the use of this verify() function, grab hold of the username and password
+
+from the form that submits the login request.
+
+So if we look in login, you'll see that there is a field called username and a field called password,
+
+and as long as that matches and we have username and password, and also username and password in the
+
+name attribute here, then what it's going to do is it's going to automatically grab it...
+
+And we can in fact confirm this by console logging this.
+
+And instead of us having to use body-parser and grab hold of all of that stuff by using request.body.username,
+
+etcetera, body-parser automates that for us.
+
+The other thing we need to take a look at is because our database queries are asynchronous, so we need
+
+to wait for them to happen before we continue,
+
+we need to change this verify() function to an asynchronous function.
+
+So that's an async function called verify().
+
+And as always how do I know all of this,
+
+of course it's through reading the documentation.
+
+If you go into the documentation section and you go to their tutorials and go to username and password,
+
+then you'll see that there's several sections that we can skip.
+
+We've already got a starting project,
+
+We've already got our Login Prompt,
+
+now this is where we're at at the moment.
+
+We're working through this verify password section.
+
+Now they use a different package to hash the passwords.
+
+We're using Bcrypt and they're using Crypto,
+
+and in fact more projects use Bcrypt in the real world than Crypto,
+
+so don't worry about that.
+
+You are in good company and we're kind of just working through this verify() function at the moment.
+
+One of the important things to realize about how Passport works is it gets triggered whenever we try
+
+to authenticate a user.
+
+So it falls into this verify() function,
+
+and the first thing we try to do as we did before is we're going to see if we have a user with the current
+
+email.
+
+And we're going to change this from email to username as well, so that we actually use the username
+
+that comes from the form.
+
+And if we do, namely the length is greater than 0, then we set them as the current user, including
+
+all of the result that comes back from the database, which remember includes things such as their ID,
+
+their email, their password hash.
+
+Next, we use our Bcrypt to compare their password that was entered in the form versus the password
+
+that was saved on the system,
+
+and if that happens to be the same...
+
+So let's go ahead and change this login password to the password from here.
+
+And if that comparison succeeds then we will end up with a result that is equal to true. Here,
+
+instead of simply res.rendering(secrets.ejs), we're going to try and pass a callback.
+
+So we're going to return from this function which is this verify() function,
+
+and we're going to return by calling the callback,
+
+that's one of these inputs.
+
+And the callback is going to firstly include any errors.
+
+Well, if this result was true then that will be null,
+
+no errors.
+
+And then the next thing we're going to pass over is the details of the actual user.
+
+We can save the details of the user from our database lookup, pass it through the callback,
+
+and that means when we redirect to the next stage, which is to go to the "/secrets", in the
+
+request already we will have the isAuthenticated set to true, and we even have access to something
+
+called a user.
+
+So I'm going to console.log() this a little bit later on,
+
+but I'm just going to write it out so that you can see what it looks like,
+
+req.user() will have the details that we have saved into it from this part where we got the user
+
+from
+
+the database, and then we added the user in to the callback.
+
+What if things go wrong?
+
+Well, if there was an error instead of console logging it, then we should return the callback and
+
+pass the error here.
+
+And also if the password was incorrect, then we should also return a callback.
+
+And in this case it's not really an error because there's nothing wrong with what's happened with Passport
+
+or with authentication,
+
+it's actually a user error, which is not strictly an error.
+
+And here we can set this second value the user to false.
+
+And this basically tells us when we try to get hold of the user or when we check isAuthenticated
+
+to false.
+
+And that means we know that the user is not authenticated.
+
+And then finally we've got this last res.send() which we're going to change into the same format,
+
+return the callback, and we're going to set this as an error,
+
+and we're going to set the error to "User not found".
+
+And we might as well do it in case our database query goes wrong as well.
+
+That's all there is to setting up our local strategy basically takes it out of the app.post() and puts
+
+it into a separate section, which can be reused at any part of our code.
+
+The last thing we need to do is just before the app.listen(), we're going to write something called,
+
+passport.serializeUser, and this takes a function.
+
+So let's add another set of parentheses inside the first set of parentheses.
+
+And we get to serialize a user.
+
+So that means that we can save the data of the user who's logged in to local storage.
+
+And we can use the callback to pass over any of the details of the user.
+
+Now, there is another Passport related method that we need just to make this work, which is called
+
+deserializeUser().
+
+And it's exactly the same code,
+
+it just passes along the user's information
+
+and all that this does is it saves the user's information such as their ID, their email to the local
+
+session, and then when you want to get hold of the user, it deserializes it back into a way that you
+
+can access the user's information through that session.
+
+Coming back to our app.post(), instead of handling everything inside an asynchronous function as we normally
+
+do, grabbing hold of the request, sending back a response, et cetera, we're actually going to ignore
+
+all of that, and we're going to use Passport as middleware.
+
+So that means that straight after the comma, after the route, we're going to use passport.authenticate(),
+
+and this is the method that is going to trigger the strategy down here as long as we tell it to.
+
+So we're going to say use the local strategy in order to authenticate this particular request.
+
+And what this is going to do is we're going to set some options,
+
+first is a successRedirect.
+
+Where do you want to redirect the user
+
+if everything went well and they are successfully authenticated? We redirect them to "/secrets".
+
+Now what about a failure redirect.
+
+Well, if they got the password wrong, if it didn't work for any sort of reason, we're going to redirect
+
+them back into the login page.
+
+If all of that's a bit confusing, let's first just try it out.
+
+So let's hit Save.
+
+Make sure that we've got our server already running.
+
+And let's go ahead and make sure that this actually works.
+
+All right.
+
+So now let's go ahead and test it out.
+
+Let's go to our login page which we have added.
+
+I'm going to put in my user with my email and password.
+
+And you can see as soon as I click login it takes me to the secrets page which meant everything went
+
+well.
+
+And we can actually catch that thing that I told you about the user that got serialized into the session,
+
+and then deserialized when we need to access it by tapping into req.user. We can console.log() it
+
+when we actually head over to the secrets page. Let's go back to our login page.
+
+Click login and you can see that req.user being printed here.
+
+It gives me their ID, their email, their password, and all of these things are stored whenever an
+
+authenticated request is made.
+
+And this also means if I try to go to the secrets route again, if I try to hit refresh on this page,
+
+or if I just go to it, or even if I close down my tab and reopen a new tab, you can see that my session
+
+is now saved.
+
+And if you go into the Chrome Developer Tools, which remember is over here under More Tools, Developer
+
+Tools, you'll be able to go to the Application tab,
+
+and here you can see under the Cookies section that for our URL localhost 3000, we've added a cookie
+
+into here that helps us to persist this session.
+
+This is why this is saved.
+
+Now you might be wondering, well, how long is that session saved?
+
+What if I closed down the browser and then I try to go to this again?
+
+Will that work?
+
+Well, no.
+
+As you can see, I typed it in again and it told me to log in.
+
+That's because that session cookie has now expired.
+
+So how do we set the expiry?
+
+Well, we can go into where we have our app.use() and we have our session,
+
+one of the options is cookie.
+
+And the cookie can have an option called maxAge,
+
+and this specifies a number in milliseconds to use when calculating the expiry.
+
+If we start out with 1000 milliseconds as one second, and then we times it by 60 to get one minute,
+
+and then we times it by 60 to get one hour, and then maybe we times it by 24 to get one day,
+
+then we end up with a one-day length cookie.
+
+So now if I repeat that experiment again, let's go ahead and log in, copy our URL and close down this
+
+browser and then put it back in here.
+
+You can see my cookie is still valid.
+
+It's still working.
+
+So that's just one thing that you can mess around with depending on what your needs are.
+
+The final thing we need to do for our session is what about the registration route?
+
+We've got this strategy for login, which is all very well and good, but right now our register route
+
+still tries to do a res.render.
+
+We can update this very, very easily using another method that we get as a part of using Passport.
+
+What we're going to change here is instead of simply just inserting the user and not caring about the results,
+
+we're going to change this to say, INSERT INTO the user the new email and password,
+
+but we're also going to use that RETURNING SQL command in order to return everything that we get back
+
+from the record that we just inserted.
+
+So that means that we can actually get hold of the new user
+
+through this result of this database query. The user gets inserted and then it comes back in the result
+
+because we're using that returning function.
+
+And then we can simply set the new user to equal the result.rows,
+
+and we're going to tap into the first row.
+
+And now instead of using res.render("/secrets), we're going to use req.login which comes from Passport,
+
+and remember it is this particular login,
+
+so i is lowercase.
+
+This is important.
+
+And inside here we're going to pass the user that we're going to save to the session.
+
+That is going to be the same as the user we created just now.
+
+And then it also allows us to add a callback in the case of what to do once everything is done.
+
+If there are any errors, it'll be captured in here, and we can simply console.log() any errors if it exists,
+
+otherwise, we can do a res.redirect and we can redirect to the secrets route.
+
+And once we've called req.login(),
+
+this automatically authenticates our user, passes this user's information into the session, serializes,
+
+deserializes,
+
+and when we get over here, we'll still be able to log that user right here.
+
+We can check if they're authenticated just the same as when we do our login route.
+
+And I'm going to show you this by creating a new user.
+
+So let's go to the register route and let's create a new user.
+
+So I don't have this email in my database yet I'm going to register her goes straight to the secrets
+
+page,
+
+and you'll see that user being printed right here from this line in the app.get() of the secrets route.
+
+This is a really neat way of being able to get hold of your user data at any route or any part of your
+
+server, and it's really useful when you want to check information for that user.
+
+When you want to persist, user sessions, etc. even though it doesn't add a lot in terms of security,
+
+it's a really important part of all modern websites
+
+when we do authentication, that we actually persist their sessions.
+
+In the next lesson, we're going to talk about something called Environment Variables.
+
+And you can see even when you were creating this session, it tells you that this secret should be stored
+
+in an environment variable so that it doesn't get added to your repository.
+
+And that is what we're going to discuss in the next lesson, how we create environment variables, how
+
+we prevent them from being exposed to other people,
+
+because after all, this is an encryption key and it is very, very top secret.
+
+So for all of that and more, I'll see you there.
+
